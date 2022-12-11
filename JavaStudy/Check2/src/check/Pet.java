@@ -24,6 +24,7 @@ public class Pet {
         System.out.println("■僕の名前は" + name + "です");
         System.out.println("■ご主人様は" + masterName + "です");
     }
+   
     
 }
 
