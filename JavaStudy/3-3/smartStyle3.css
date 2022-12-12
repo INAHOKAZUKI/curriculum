@@ -1,0 +1,42 @@
+@media screen and (max-width: 479px){
+    div.blue {
+        width: 200px;
+        height: 200px;
+    }
+    div.white1 {
+        width: 60px;
+        height: 160px;
+        position: absolute;
+        right: 70px;
+        top: 20px;
+        flex-direction: column;
+    }
+    div.skyblue {
+        width: 200px;
+        height: 100px;
+        float: none;
+    }
+    div.wine-red {
+        width: 200px;
+        height: 200px;
+        float: none;
+    }
+    div.white2:first-child{
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+    div.white2:nth-child(2){
+        position: absolute;
+        top: 75px;
+        left: 30px;
+    }
+    div.white2:last-child {
+        position: absolute;
+        left: 30px;
+        bottom: 20px;
+    }
+    div.cry-orange {
+        width: 200px;
+    }
+}
