@@ -1,1 +1,31 @@
 @charset "UTF-8";
+div.header-container {
+	background-color: gray;
+}
+header label.login {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+header label.date {
+	padding: 10px;
+	font-size: 10px;
+}
+div.main {
+	padding-top:50px;
+	padding-bottom:50px;
+}
+footer div {
+	background-color: grey;
+}
+footer label {
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+
+.main label {	
+    display: inline-block;
+    text-align: right;
+    width: 50px;
+}

@@ -7,8 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<footer>
 <!-- フッターを作成 -->
-
+	<div>
+		<label>hoge.Inc</label>
+	</div>
+</footer>
 </body>
 </html>
