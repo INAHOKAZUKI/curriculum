@@ -12,7 +12,6 @@ import javax.servlet.http.HttpSession;
 import skillcheck.bean.EmployeeBean;
 import skillcheck.bean.ResponseBean;
 import skillcheck.constant.ConstMessage;
-import skillcheck.dao.EmployeeDao.ExecuteCase;
 import skillcheck.exception.MVCException;
 import skillcheck.logger.Logger;
 import skillcheck.service.EmployeeManagementService;
@@ -133,7 +132,7 @@ public abstract class BaseServlet extends HttpServlet {
      * @return
      * @throws IOException
      */
-    protected boolean validateLogin(final HttpServletRequest request) throws IOException {
+    protected boolean validateLogin(final HttpServletRequest request) throws IOException, MVCException {
         Logger.logStart(new Throwable());
 
         final HttpSession session = request.getSession(true);
@@ -176,9 +175,6 @@ public abstract class BaseServlet extends HttpServlet {
 
         } catch (NullPointerException e) {
             this.executeSetExceptionInfo(e, ConstMessage.EXCEPTION_NULL, 0);
-        } catch (MVCException e) {
-            Logger.log(e);
-            this.responseBean = e.getResponseBean();
         } finally {
             if (Objects.isNull(this.destinationTarget)) {
                 isLoginError = true;
