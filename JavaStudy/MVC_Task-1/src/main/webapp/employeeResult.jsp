@@ -73,7 +73,7 @@
                 <td title="<%=emp.getProgramingLanguage()%>">[ここへ記述</td>
                 <td title="<%=emp.getComment()%>">[ここへ記述]</td>
                 <td>
-                    <form action="/MVC_Task/employee" method="get">
+                    <form action="/MVC_Task-1/employee" method="get">
                         <input type="hidden" name="sender" value="/employeeResult.jsp"></input>
                         <input type="hidden" name="empId" value="<%=emp.getEmpId()%>">
                         <label id="update" class="btn-emp-regist">
@@ -90,7 +90,7 @@
             <tfoot align="right" class="tfoot-td">
                 <tr>
                     <td colspan="8">
-                        <form action="/MVC_Task/employee" method="post">
+                        <form action="/MVC_Task-1/employee" method="post">
                             <div class="div-btn-delete-area">
                                 <input type="hidden" name="sender" value="/employeeResult.jsp"></input>
                                 <input id="deleteEmpId" type="hidden" name="empId" value="">
@@ -105,7 +105,7 @@
     </div>
     <% } %>
     <br>
-    <form action="/MVC_Task/employee" method="get">
+    <form action="/MVC_Task-1/employee" method="get">
         <input type="hidden" name="sender" value="/employeeResult.jsp"></input>
         <br>
         <label id="logout" class="btn-logout" onclick="exeSubmit(this)">
